@@ -70,25 +70,16 @@ div.bottom-header {
   border: 1px solid #121212;
 }
 div.logo-home {
-  background-color: #4d4d4d;
-  width: 19%;
-  left: 1%
-}
-div.logo-home {
-  height: 137px;
   background-color: #272727;
-  border: 1px solid tomato;
-  position: absolute;
-  top: 15px;
+  width: 19%;
+  left: 1%;
 }
 .logo {
-  position: absolute;
-  width: 90%;
-  height: 10vh  ;
-  border: 1px solid tomato;
-  /*align-items: center;*/
+  width: 60%;
+  height: auto;
+  padding: 18px;
 }
-div.deal-link, div.search-window {
+div.logo-home, div.deal-link, div.search-window {
   text-align: center;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   color: white;
