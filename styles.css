@@ -1,0 +1,354 @@
+/* All Top Header styles */
+
+/*
+Test
+*/
+* {
+  box-sizing: border-box;
+}
+section.top-header {
+  background-color: #4d4d4d;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #4d4d4d;
+}
+.header-coupon-container {
+  float: left;
+  width: 350px;
+  height: 45px;
+  padding: 0;
+}
+.savings-header-position {
+  width: 100%;
+}
+#button-div {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-transform: uppercase;
+  background-color: #008080;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 16px;
+  margin: 0;
+}
+#button-div:hover {
+  background-color: #00b3b3;
+}
+a {text-decoration: none;}
+ul.top {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-align: right;
+  height: inherit;
+  margin: 0;
+}
+li {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  display: inline-block;
+  color: white;
+}
+li .top-links {
+  font-size: 16px;
+  padding: 10px 15px;
+}
+a.top-links {
+  text-decoration: none;
+  color: white;
+}
+.top-links:hover {
+  text-decoration: underline;
+}
+.cart-position {
+  height:50px;
+  width:70px;
+}
+.fa-shopping-cart {
+  font-size: 24px;
+  padding: 5px;
+}
+div.bottom-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #272727;
+  height: 170px;
+  width: 100%;
+  border: 1px solid #121212;
+}
+div.logo-home {
+  background-color: #4d4d4d;
+  width: 19%;
+  left: 1%
+}
+div.logo-home {
+  height: 137px;
+  background-color: #272727;
+  border: 1px solid tomato;
+  position: absolute;
+  top: 15px;
+}
+
+/** Old Code for Logo **/
+/*.logo {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  top: 20px;
+  left: 75px;
+}
+/***********************/
+
+/** Fixes logo overlap **/
+.logo {
+  position: absolute;
+  width: 90%;
+  height: 10vh  ;
+  border: 1px solid tomato;
+  /*align-items: center;*/
+}
+/** Fixes logo overlap **/
+
+div.deal-link, div.search-window {
+  text-align: center;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 15px;
+}
+div.deal-link, div.search-window {
+  padding: 47px 0;
+  height: 43px;
+}
+div.deal-link {
+  background-color: #008080;
+  width: 60%;
+  left: 20%;
+}
+div.search-window {
+  background-color: #4d4d4d;
+  width: 19%;
+  right: 1%;
+  transition: .1s;
+  transition-timing-function:ease-out;
+  left: 80%;
+}
+div.search-window:hover {
+  height: 740px;
+  width: 100%;
+  left: 0;
+  background-color: #272727;
+  opacity: .99;
+}
+div.search-window:hover div.child-box {
+  opacity: 1;
+  width: 300px;
+  height: 150px;
+  background-color: #272727;
+  margin: 10px;
+  visibility: visible;
+}
+div.search-window:hover input[type=text] {
+  right: 34%;
+  width: 32%;
+}
+div.search-window:hover .fa-search {
+  right: 67%;
+}
+div.search-window:hover div.parent-box {
+  width: 60%;
+  height: 710px;
+  margin: 60px 20% 0 20%;
+  align-content: center;
+  opacity: 1;
+  visibility: visible;
+  background-color: #272727;
+}
+.fa-search {
+  font-size: 45px;
+  color: white;
+  position: absolute;
+  right: 250px;
+  top: 50px;
+  transition: .7s;
+  transition-timing-function:ease-out;
+}
+input[type=text] {
+  position: absolute;
+  right: 60px;
+  width: 170px;
+  box-sizing: border-box;
+  border-radius: 0;
+  font-size: 16px;
+  background-color: white;
+  padding: 12px;
+  transition: .7s;
+  transition-timing-function:ease-out;
+}
+div.parent-box {
+  width: 0;
+  height: 0;
+  float: right;
+  background-color: #4d4d4d;
+  visibility: hidden;
+  opacity: 0;
+  transition-timing-function:ease-out;
+  transition: .1s;
+}
+div.child-box {
+  width: 0px;
+  height: 0px;
+  background-color: #4d4d4d;
+  margin: 0px;
+  opacity: 0;
+  visibility: hidden;
+  display: inline-block;
+  transition-timing-function:ease-out;
+  transition: width .1s, height .1s, opacity 1s;
+}
+i.fa-male, i.fa-female, i.fa-child, i.fa-tshirt, i.fa-hat-wizard, i.fa-clock, i.fa-laptop, i.fa-football-ball, i.fa-money-bill-alt {
+  font-size: 120px;
+  margin: 15px 0 0 0;
+}
+a.fa-male, a.fa-female, a.fa-child, a.fa-tshirt, a.fa-hat-wizard, a.fa-clock, a.fa-laptop, a.fa-football-ball, a.fa-money-bill-alt {
+  text-decoration: none;
+  color: white;
+}
+img.logo-thumbnail {
+  width: 200px;
+  height: auto;
+}
+#expand-child {
+  width: 300px;
+  background-color: #008080;
+  height:150px;
+}
+#expand-child:hover i{
+  animation: shift-left .5s forwards;
+}
+#expand-child:hover {
+  animation: widen .5s forwards;
+}
+@keyframes widen {
+  from {width: 300px; background-color: #008080;}
+  to {width: 375px; background-color: #00b3b3;}
+}
+main.main-container {
+  width: 100%;
+}
+h2 {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 20px;
+  color: black;
+}
+.salute-link {
+  background-color: #cccccc;
+  height: 300px;
+  border: 1px solid #cccccc;
+  width: 100%;
+}
+.wear-link {
+  background-color: #fbfbfb;
+  height: 300px;
+  width: 50%;
+  float: right;
+  border: 1px solid #cccccc;
+}
+.nfl100-link {
+  background-color: #fbfbfb;
+  height: 300px;
+  width: 50%;
+  border: 1px solid #cccccc;
+}
+.minshew-link {
+  background-color: #cccccc;
+  height: 270px;
+  border: 1px solid #cccccc;
+  width: 100%;
+}
+.retired-link {
+  background-color: #fbfbfb;
+  height: 230px;
+  width: 50%;
+  float: right;
+  border: 1px solid #cccccc;
+}
+.season25-link {
+  background-color: #fbfbfb;
+  height: 230px;
+  width: 50%;
+  border: 1px solid #cccccc;
+}
+.brand-link {
+  background-color: #cccccc;
+  height: 200px;
+  border: 1px solid #cccccc;
+  width: 100%;
+}
+.sideline-link {
+  background-color: #fbfbfb;
+  height: 230px;
+  border: 1px solid #cccccc;
+  width: 100%;
+}
+.players-link {
+  background-color: #cccccc;
+  height: 210px;
+  border: 1px solid #cccccc;
+  width: 100%;
+}
+.customgear-link {
+  background-color: #fbfbfb;
+  height: 210px;
+  border: 1px solid #cccccc;
+  width: 100%;
+}
+.footer-coupon-container {
+  padding: 0;
+  float: left;
+  width: 400px;
+}
+.footer-container {
+  width: 100%;
+  border: 2px solid #cccccc;
+  padding: 0px 0px 25px 0px;
+  background-color: #f0f8ff;
+}
+section.footer-inline {
+  display: inline-block;
+  width: 20%;
+  padding: 15px 40px;
+}
+ul.footer-block {
+  margin: 0;
+}
+a.footer-links {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+}
+.footer-links:hover {
+  text-decoration: underline;
+}
+#footer-links {
+  display: block;
+  padding: 5px 0px;
+}
+h3 {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 15px;
+  color: black;
+  padding: 25px 0px 0px 0px;
+  text-indent: 35px;
+}
+.footer-2-container {
+  width: 100%;
+  padding: 25px 0px 25px 0px;
+  background-color: #cccccc;
+  border: 1px solid #cccccc;
+}
+p.center-aligned {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: black;
+}
