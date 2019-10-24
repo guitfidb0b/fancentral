@@ -83,14 +83,7 @@ div.logo-home {
   top: 15px;
   text-align: center;
 }
-div.bottom-header-right {
-  /*width: 65%;*/
-  height: 140px;
 
-  position: absolute;
-  left: 35%;
-  top: 15px;
-}
 div.deal-link {
   height: 85px;
   background-color: #006666;
@@ -175,7 +168,6 @@ div.parent-box {
   opacity: 0;
   transition-timing-function:ease-out;
   transition: .1s;
-  border: 1px solid tomato;
 }
 div.search-window:hover div.parent-box {
   width: 60%;
@@ -199,49 +191,63 @@ div.child-box {
   display: inline-block;
   transition-timing-function:ease-out;
   transition: width .1s, height .1s, opacity 1s;
-  border: 1px solid tomato;
 }
 div.search-window:hover div.child-box {
+  opacity: 1;
+  width: 25%;
+  height: 100px;
+  background-color: #008080;
+  margin: 1%;
+  visibility: visible;
+}
+div.child-box-logo {
+  width: 0;
+  height: 0;
+  background-color: #4d4d4d;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  display: inline-block;
+  transition-timing-function:ease-out;
+  transition: width .1s, height .1s, opacity 1s;
+}
+div.search-window:hover div.child-box-logo {
   opacity: 1;
   width: 25%;
   height: 100px;
   background-color: #272727;
   margin: 1%;
   visibility: visible;
+  border: 1px solid tomato;
+}
+div.child-box:hover {
+  animation: widen .5s forwards;
+}
+@keyframes widen {
+  from {width: 25%; background-color: #008080;}
+  to {width: 30%; background-color: #00b3b3;}
 }
 
 /* All FontAwesome icons Will Remove */
 i.fa-male, i.fa-female, i.fa-child, i.fa-tshirt, i.fa-hat-wizard, i.fa-clock, i.fa-laptop, i.fa-football-ball, i.fa-money-bill-alt {
-  font-size: 120px;
+  font-size: 100%;
   margin: 15px 0 0 0;
+  border: 1px solid tomato;
 }
 a.fa-male, a.fa-female, a.fa-child, a.fa-tshirt, a.fa-hat-wizard, a.fa-clock, a.fa-laptop, a.fa-football-ball, a.fa-money-bill-alt {
   text-decoration: none;
   color: white;
 }
 img.logo-thumbnail {
-  width: 200px;
+  width: 60%;
+  margin-top: 3.5%;
   height: auto;
+  text-align: center;
+  border: 1px solid tomato;
 }
-
-/* Adding an id tag was necessary to create an animation on the child-box */
-/*#expand-child {
-  width: 300px;
-  background-color: #008080;
-  height:150px;
-}
-#expand-child:hover i{
-  animation: shift-left .5s forwards;
-}
-#expand-child:hover {
-  animation: widen .5s forwards;
-}*/
 
 /* Widens the child-box (this is in the navigation window */
-@keyframes widen {
-  from {width: 300px; background-color: #008080;}
-  to {width: 375px; background-color: #00b3b3;}
-}
+
 main.main-container {
   width: 100%;
 }
