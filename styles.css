@@ -61,8 +61,6 @@ a.top-links {
   padding: 1px;
 }
 
-
-
 /* Styles for Sticky Header */
 div.bottom-header-container {
   position: -webkit-sticky;
@@ -74,7 +72,9 @@ div.bottom-header-container {
   max-width: 1835px;
   border: 1px solid #272727
 }
-div.bottom-header-left {
+
+
+div.logo-home {
   background-color: #272727;
   width: 34%;
   height: 140px;
@@ -84,41 +84,46 @@ div.bottom-header-left {
   text-align: center;
 }
 div.bottom-header-right {
-  width: 65%;
+  /*width: 65%;*/
   height: 140px;
-  text-align: center;
+
   position: absolute;
   left: 35%;
   top: 15px;
-}
-div.logo-home {
-  width: 100%;
-  height: 140px;
-}
-.logo {
-  max-width: 210px;
-  height: auto;
-  padding: 20px 0;
 }
 div.deal-link {
   height: 85px;
   background-color: #006666;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   color: white;
+  text-align: center;
   font-size: 30px;
   padding-top: 55px;
-  float: left;
-  width: 80%;
+  position: absolute;
+  top: 15px;
+  left: 35%;
+  width: 52%;
 }
 div.search-window {
   background-color: #008080;
-  width: 20%;
+  width: 13%;
   height: 140px;
-  float: left;
+  top: 15px;
+  position: absolute;
+  left: 87%;
   color: white;
   font-size: 30px;
+  text-align: center;
   box-shadow: 1px 1px 1px 1px #004d4d;
+  transition: .1s;
+  transition-timing-function:ease-out;
 }
+.logo {
+  max-width: 210px;
+  height: auto;
+  padding: 20px 0;
+}
+
 .fa-search {
   font-size: 70px;
   color: white;
@@ -139,13 +144,12 @@ input[type=text] {
   border: 1px solid tomato;
   font-size: 16px;
   background-color: white;
-  transition: .7s;
+  transition: .2s;
   transition-timing-function:ease-out;
 }
 
 
 /* Start of Transitions that are based on hovering over the Search div container */
-
 div.search-window:hover {
   height: 740px;
   width: 100%;
@@ -153,16 +157,6 @@ div.search-window:hover {
   background-color: #272727;
   opacity: .99;
 }
-div.search-window:hover div.child-box {
-  opacity: 1;
-  width: 300px;
-  height: 150px;
-  background-color: #272727;
-  margin: 10px;
-  visibility: visible;
-}
-
-
 
 div.search-window:hover input[type=text] {
   right: 34%;
@@ -171,40 +165,49 @@ div.search-window:hover input[type=text] {
 div.search-window:hover .fa-search {
   right: 67%;
 }
-div.search-window:hover div.parent-box {
-  width: 60%;
-  height: 710px;
-  margin: 60px 20% 0 20%;
-  align-content: center;
-  opacity: 1;
-  visibility: visible;
-  background-color: #272727;
-}
 
-
-/* This contains all child boxes that show up when hovering over Search */
 div.parent-box {
   width: 0;
   height: 0;
   float: right;
-  background-color: #4d4d4d;
+  background-color: #008080;
   visibility: hidden;
   opacity: 0;
   transition-timing-function:ease-out;
   transition: .1s;
   border: 1px solid tomato;
 }
+div.search-window:hover div.parent-box {
+  width: 60%;
+  height: 520px;
+  margin: 0 20%;
+  padding: .5% 0;
+  align-content: center;
+  opacity: 1;
+  visibility: visible;
+  background-color: #272727;
+}
+
+/* This contains all child boxes that show up when hovering over Search */
 div.child-box {
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   background-color: #4d4d4d;
-  margin: 0px;
+  margin: 0;
   opacity: 0;
   visibility: hidden;
   display: inline-block;
   transition-timing-function:ease-out;
   transition: width .1s, height .1s, opacity 1s;
   border: 1px solid tomato;
+}
+div.search-window:hover div.child-box {
+  opacity: 1;
+  width: 25%;
+  height: 100px;
+  background-color: #272727;
+  margin: 1%;
+  visibility: visible;
 }
 
 /* All FontAwesome icons Will Remove */
@@ -249,7 +252,6 @@ h2 {
 }
 
 /* Styles for the Main content of the Home Page */
-/* Merv will style these */
 .salute-link {
   background-color: #cccccc;
   height: 300px;
@@ -270,7 +272,6 @@ h2 {
   border: 1px solid #cccccc;
 }
 
-/* Bobby will style these */
 .minshew-link {
   background-color: #cccccc;
   height: 270px;
@@ -291,7 +292,6 @@ h2 {
   border: 1px solid #cccccc;
 }
 
-/* Charlie will style these */
 .brand-link {
   background-color: #cccccc;
   height: 200px;
@@ -369,9 +369,6 @@ h3 {
   padding: 15px 0 10px 0;
   margin:0;
 }
-
-
-
 .footer-2-container {
   width: 100%;
   padding: 25px 0px 25px 0px;
