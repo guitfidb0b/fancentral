@@ -190,7 +190,7 @@ div.child-box {
 div.search-window:hover div.child-box {
   opacity: 1;
   width: 25%;
-  height: 100px;
+  height: 120px;
   background-color: #008080;
   margin: 1%;
   visibility: visible;
