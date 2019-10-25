@@ -27,7 +27,6 @@ section.top-header {
 }
 #button-div:hover {
   background-color: #00b3b3;
-
 }
 a {text-decoration: none;}
 ul.top {
@@ -72,8 +71,6 @@ div.bottom-header-container {
   max-width: 1835px;
   border: 1px solid #272727
 }
-
-
 div.logo-home {
   background-color: #272727;
   width: 34%;
@@ -83,13 +80,15 @@ div.logo-home {
   top: 15px;
   text-align: center;
 }
-
 div.deal-link {
   height: 85px;
   background-color: #006666;
+  box-shadow: 1px 1px 1px 1px #004d4d;
+  background-image: linear-gradient(to bottom right, #006666, #008080);
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   color: white;
-  text-align: center;
+  text-align: left;
+  text-indent: 100px;
   font-size: 30px;
   padding-top: 55px;
   position: absolute;
@@ -97,50 +96,55 @@ div.deal-link {
   left: 35%;
   width: 52%;
 }
+.logo {
+  max-width: 210px;
+  height: auto;
+  padding: 20px 0;
+}
 div.search-window {
   background-color: #008080;
   width: 13%;
   height: 140px;
   top: 15px;
   position: absolute;
+  text-align: center;
   left: 87%;
   color: white;
   font-size: 30px;
-  text-align: center;
   box-shadow: 1px 1px 1px 1px #004d4d;
   transition: .1s;
   transition-timing-function:ease-out;
 }
-.logo {
-  max-width: 210px;
-  height: auto;
-  padding: 20px 0;
-}
-
 .fa-search {
   font-size: 70px;
   color: white;
-  position: relative;
+  position: absolute;
+  right: 15%;
   top: 35px;
-  transition: .7s;
+  transition: .3s;
   transition-timing-function:ease-out;
 }
 input[type=text] {
-  position: relative;
+  position: absolute;
   visibility: hidden;
-  float: left;
-  left: 25%;
-  height: 4em;
-  width: 30%;
+  top: 45px;
+  right: 0%;
+  height: 40px;
+  width: 0%;
   box-sizing: border-box;
   border-radius: 0;
-  border: 1px solid tomato;
-  font-size: 16px;
   background-color: white;
-  transition: .2s;
+  transition: .3s;
   transition-timing-function:ease-out;
 }
-
+div.search-window:hover input[type=text] {
+  visibility: visible;
+  right: 34%;
+  width: 32%;
+}
+div.search-window:hover .fa-search {
+  right: 67%;
+}
 
 /* Start of Transitions that are based on hovering over the Search div container */
 div.search-window:hover {
@@ -150,15 +154,6 @@ div.search-window:hover {
   background-color: #272727;
   opacity: .99;
 }
-
-div.search-window:hover input[type=text] {
-  right: 34%;
-  width: 32%;
-}
-div.search-window:hover .fa-search {
-  right: 67%;
-}
-
 div.parent-box {
   width: 0;
   height: 0;
@@ -172,7 +167,7 @@ div.parent-box {
 div.search-window:hover div.parent-box {
   width: 60%;
   height: 520px;
-  margin: 0 20%;
+  margin: 110px 20% 0 20%;
   padding: .5% 0;
   align-content: center;
   opacity: 1;
@@ -190,7 +185,7 @@ div.child-box {
   visibility: hidden;
   display: inline-block;
   transition-timing-function:ease-out;
-  transition: width .1s, height .1s, opacity 1s;
+  transition: width .1s, height .1s, opacity 1.7s;
 }
 div.search-window:hover div.child-box {
   opacity: 1;
@@ -218,7 +213,6 @@ div.search-window:hover div.child-box-logo {
   background-color: #272727;
   margin: 1%;
   visibility: visible;
-  border: 1px solid tomato;
 }
 div.child-box:hover {
   animation: widen .5s forwards;
@@ -227,23 +221,11 @@ div.child-box:hover {
   from {width: 25%; background-color: #008080;}
   to {width: 30%; background-color: #00b3b3;}
 }
-
-/* All FontAwesome icons Will Remove */
-i.fa-male, i.fa-female, i.fa-child, i.fa-tshirt, i.fa-hat-wizard, i.fa-clock, i.fa-laptop, i.fa-football-ball, i.fa-money-bill-alt {
-  font-size: 100%;
-  margin: 15px 0 0 0;
-  border: 1px solid tomato;
-}
-a.fa-male, a.fa-female, a.fa-child, a.fa-tshirt, a.fa-hat-wizard, a.fa-clock, a.fa-laptop, a.fa-football-ball, a.fa-money-bill-alt {
-  text-decoration: none;
-  color: white;
-}
 img.logo-thumbnail {
   width: 60%;
-  margin-top: 3.5%;
+  margin: 0;
   height: auto;
   text-align: center;
-  border: 1px solid tomato;
 }
 
 /* Widens the child-box (this is in the navigation window */
@@ -366,6 +348,7 @@ a.footer-link-hover {
 li.footer-links {
   display: block;
   padding: 10px 0;
+  text-indent: 10px;
   margin:0;
 }
 h3 {
