@@ -152,7 +152,7 @@ div.search-window:hover {
   width: 100%;
   left: 0;
   background-color: #272727;
-  opacity: .99;
+  opacity: .98;
 }
 div.parent-box {
   width: 0;
@@ -170,7 +170,7 @@ div.search-window:hover div.parent-box {
   margin: 110px 20% 0 20%;
   padding: .5% 0;
   align-content: center;
-  opacity: 1;
+  opacity: .98;
   visibility: visible;
   background-color: #272727;
 }
