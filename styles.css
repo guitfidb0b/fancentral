@@ -92,6 +92,7 @@ div.deal-link {
   font-size: 30px;
   padding-top: 55px;
   position: absolute;
+  opacity: .8;
   top: 15px;
   left: 35%;
   width: 52%;
@@ -195,6 +196,9 @@ div.search-window:hover div.child-box {
   margin: 1%;
   visibility: visible;
 }
+div.search-window:hover div.icon-text {
+  display: inline;
+}
 div.child-box-logo {
   width: 0;
   height: 0;
@@ -215,17 +219,42 @@ div.search-window:hover div.child-box-logo {
   visibility: visible;
 }
 div.child-box:hover {
-  animation: widen .5s forwards;
+  animation: widen .4s forwards;
+  /*animation: hide-text .4 forwards;*/
+}
+div.child-box:hover img.image-visibility{
+  animation: shift-left .4s forwards;
+}
+div.icon-text {
+  font-size: 20px;
+  float: left;
+  /*display: none;*/
 }
 @keyframes widen {
   from {width: 25%; background-color: #008080;}
   to {width: 30%; background-color: #00b3b3;}
 }
+@keyframes shift-left {
+  from {margin-right: 5%; opacity: 1;}
+  to {margin-right: 65%; opacity: .7;}
+}
+/*@keyframes hide-text {
+  from {display: none;)
+  to {display: blo}
+}*/
 img.logo-thumbnail {
-  width: 60%;
+  width: 100%;
   margin: 0;
   height: auto;
-  text-align: center;
+}
+img.image-visibility {
+  display: none;
+  float:right;
+  margin-right: 5%;
+  opacity: 1;
+}
+div.search-window:hover img.image-visibility {
+  display: inline;
 }
 
 /* Widens the child-box (this is in the navigation window */
