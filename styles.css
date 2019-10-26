@@ -225,16 +225,16 @@ div.search-window:hover div.child-box-logo {
   display: inline-block;
 }
 div.child-box:hover {
-  animation: widen .4s forwards;
+  animation: widen .1s forwards;
   animation-timing-function: ease-in-out;
 }
 div.child-box:hover div.icon-text{
-  animation: shift-up .8s forwards;
+  animation: shift-up .3s forwards;
   animation-delay: .1s;
   animation-timing-function: ease-in;
 }
 div.child-box:hover img.image-visibility {
-  animation: change-opacity .8s forwards;
+  animation: change-opacity .3s forwards;
   animation-delay: .2s;
   animation-timing-function: ease-in;
 }
