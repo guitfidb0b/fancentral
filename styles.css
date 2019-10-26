@@ -194,7 +194,6 @@ div.search-window:hover div.child-box {
   height: 100px;
   background-color: #008080;
   margin: 1%;
-  padding: 10px 0;
   visibility: visible;
 }
 div.search-window:hover div.icon-text {
@@ -214,7 +213,7 @@ div.child-box-logo {
 div.search-window:hover div.child-box-logo {
   opacity: 1;
   width: 25%;
-  height: 120px;
+  height: 100px;
   background-color: #272727;
   margin: 1%;
   visibility: visible;
@@ -311,29 +310,47 @@ h2 {
 }
 
 .brand-link {
-  background-color: #cccccc;
+  background-color: #fbfbfb;
   height: 200px;
   border: 1px solid #cccccc;
   width: 100%;
+  padding-bottom: 100px;
+  padding-top: 40px;
 }
 .sideline-link {
   background-color: #fbfbfb;
-  height: 230px;
+  height: 420px;
   border: 1px solid #cccccc;
   width: 100%;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-align: center;
+  text-size: 25px;
+}
+.sideline-background {
+  background-image: url("./backgrounds/sideline background.jpg");
+  
 }
 .players-link {
-  background-color: #cccccc;
-  height: 210px;
+  background-color: #fbfbfb;
+  height: 800px;
   border: 1px solid #cccccc;
   width: 100%;
+  padding-bottom: 20px;
 }
 .customgear-link {
   background-color: #fbfbfb;
-  height: 210px;
+  height: 420px;
   border: 1px solid #cccccc;
   width: 100%;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-align: center;
+  text-size: 25px;
 }
+
 
 /* Beginning footer section styles */
 .footer-coupon-container {
