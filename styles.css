@@ -129,11 +129,11 @@ div.search-window {
 }
 input[type=text] {
   position: absolute;
-  visibility: hidden;
-  top: 45px;
+  display: none
   right: 0%;
   height: 40px;
   width: 0%;
+  opacity: 0;
   box-sizing: border-box;
   border-radius: 0;
   background-color: white;
@@ -141,9 +141,16 @@ input[type=text] {
   transition-timing-function:ease-out;
 }
 div.search-window:hover input[type=text] {
-  visibility: visible;
+  display: block;
+  top: 45px;
+  opacity: 0;
   right: 34%;
   width: 32%;
+  animation: search-visible 1s forwards;
+}
+@keyframes search-visible {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 div.search-window:hover .fa-search {
   right: 67%;
@@ -219,10 +226,17 @@ div.search-window:hover div.child-box-logo {
 }
 div.child-box:hover {
   animation: widen .4s forwards;
+  animation-timing-function: ease-in-out;
 }
 div.child-box:hover div.icon-text{
-  animation: shift-up .4s forwards;
+  animation: shift-up .8s forwards;
   animation-delay: .1s;
+  animation-timing-function: ease-in;
+}
+div.child-box:hover img.image-visibility {
+  animation: change-opacity .8s forwards;
+  animation-delay: .2s;
+  animation-timing-function: ease-in;
 }
 img.image-visibility {
   display: none;
@@ -237,7 +251,7 @@ div.search-window:hover img.image-visibility {
   display: inline;
 }
 div.icon-text {
-  font-size: .7em;
+  font-size: .6em;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   color: white;
   text-decoration: none;
@@ -249,22 +263,19 @@ div.icon-text {
 div.search-window:hover div.icon-text {
   display: inline;
 }
-div.child-box:hover img.image-visibility {
-  animation: change-opacity 1s forwards;
-  animation-delay: .2s;
-}
+
 @keyframes change-opacity {
   from {opacity: 1;}
   to {opacity: .4;}
 }
 @keyframes widen {
   from {width: 25%; background-color: #008080;}
-  to {width: 30%; background-color: #00b3b3;}
+  to {width: 30%; background-color: #00cccc;}
 }
 @keyframes shift-up {
-  0% {margin-top: 70px; font-size: .7em;}
-  30% {margin-top: 10px; font-size: .7em;}
-  100% {margin-top: 10px; font-size: .8em;}
+  0% {margin-top: 70px; font-size: .6em; opacity: 1;}
+  20% {margin-top: 10px; font-size: .6em; opacity: 1;}
+  100% {margin-top: 10px; font-size: .89em; opacity: 1;}
 }
 img.logo-thumbnail {
   width: 80%;
