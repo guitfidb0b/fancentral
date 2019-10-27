@@ -194,16 +194,19 @@ div.child-box {
   opacity: 0;
   visibility: hidden;
   display: inline-block;
+  position: relative;
   transition-timing-function:ease-out;
   transition: width .1s, height .1s, opacity 1.7s;
 }
 div.search-window:hover div.child-box {
   opacity: 1;
   width: 25%;
-  height: 100px;
+  height: 120px;
   background-color: #008080;
   margin: 1%;
   visibility: visible;
+  overflow: hidden;
+  text-align: left;
 }
 
 div.child-box-logo {
@@ -225,62 +228,88 @@ div.search-window:hover div.child-box-logo {
   display: inline-block;
 }
 div.child-box:hover {
-  animation: widen .1s forwards;
+  animation: widen .2s forwards;
   animation-timing-function: ease-in-out;
 }
-div.child-box:hover div.icon-text{
-  animation: shift-up .3s forwards;
-  animation-delay: .1s;
+div.child-box:hover span.icon-text{
+  animation: shift-right .5s forwards;
+  animation-delay: 0;
   animation-timing-function: ease-in;
 }
 div.child-box:hover img.image-visibility {
-  animation: change-opacity .3s forwards;
-  animation-delay: .2s;
+  animation: change-opacity .2s forwards;
+  animation-delay: .1s;
+  animation-timing-function: ease-in;
+}
+div.child-box:hover span.shop-text {
+  animation: shift-left .2s forwards;
+  animation-delay: .1s;
   animation-timing-function: ease-in;
 }
 img.image-visibility {
   display: none;
-  float:left;
-  width: 30%;
-  height: auto;
-  margin-left: 20px;
-  margin-top: 0px;
-  opacity: 1;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  /*border: 1px solid tomato;*/
 }
 div.search-window:hover img.image-visibility {
-  display: inline;
+  display: flex;
+  opacity: .2;
 }
-div.icon-text {
-  font-size: .6em;
+span.icon-text {
+  font-size: 20px;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   color: white;
   text-decoration: none;
-  float: right;
-  margin-right: 20px;
-  margin-top: 70px;
+  position: absolute;
+  left: 15%;
   display: none;
+  top: 80px;
 }
-div.search-window:hover div.icon-text {
-  display: inline;
+div.search-window:hover span.icon-text {
+  display:flex;
+  /*border: 2px solid tomato;*/
 }
-
+span.shop-text {
+  font-size: 20px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: #00cccc;
+  background-color: white;
+  text-decoration: none;
+  position: absolute;
+  left:0;
+  transform: translateX(500px);
+  padding:2px;
+  width: 100%;
+  display: none;
+  top: 50px;
+}
+div.search-window:hover span.shop-text {
+  display: flex;
+}
 @keyframes change-opacity {
-  from {opacity: 1;}
-  to {opacity: .4;}
+  from {opacity: .2; top: 10px; width: 100px; height: auto;}
+  to {opacity: 1; top: 0; width: 120px; height: auto;}
 }
 @keyframes widen {
   from {width: 25%; background-color: #008080;}
   to {width: 30%; background-color: #00cccc;}
 }
-@keyframes shift-up {
-  0% {margin-top: 70px; font-size: .6em; opacity: 1;}
-  20% {margin-top: 10px; font-size: .6em; opacity: 1;}
-  100% {margin-top: 10px; font-size: .89em; opacity: 1;}
+@keyframes shift-right {
+  0% {left: 15%;}
+  15% {transform: translateX(100px);}
+  100% {transform: translateX(100px);}
+}
+@keyframes shift-left {
+  from {transform: translateX(500px);}
+  to {transform: translateX(149px);}
 }
 img.logo-thumbnail {
-  width: 80%;
+  width: 100%;
   margin: 0;
   height: auto;
+  opacity: .5;
 }
 
 /* Widens the child-box (this is in the navigation window */
