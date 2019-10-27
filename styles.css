@@ -75,7 +75,7 @@ div.bottom-header-container {
 }
 div.logo-home {
   background-color: #272727;
-  width: 34%;
+  width: 19%;
   height: 140px;
   position: absolute;
   left: 1%;
@@ -96,8 +96,8 @@ div.deal-link {
   position: absolute;
   opacity: .8;
   top: 15px;
-  left: 35%;
-  width: 52%;
+  left: 20%;
+  width: 60%;
 }
 .logo {
   max-width: 210px;
@@ -106,51 +106,47 @@ div.deal-link {
 }
 div.search-window {
   background-color: #008080;
-  width: 13%;
+  width: 19%;
   height: 140px;
   top: 15px;
-  position: absolute;
+  position: relative;
   text-align: center;
-  left: 87%;
+  left: 80%;
   color: white;
   font-size: 30px;
   box-shadow: 1px 1px 1px 1px #004d4d;
-  transition: .1s;
+  transition: .2s;
   transition-timing-function:ease-out;
+  overflow: hidden;
 }
 .fa-search {
   font-size: 70px;
   color: white;
   position: absolute;
-  right: 15%;
+  right: 240px;
   top: 35px;
-  transition: .3s;
-  transition-timing-function:ease-out;
+  transition: .2s;
+  transition-delay: .1s;
+  transition-timing-function:ease-in-out;
 }
 input[type=text] {
   position: absolute;
-  display: none
   right: 0%;
   height: 40px;
-  width: 0%;
-  opacity: 0;
+  width: 170px;
+  top: 45px;
+  right: 50px;
   box-sizing: border-box;
-  border-radius: 0;
+  border: 2px solid white;
+  border-radius: 7px;
   background-color: white;
-  transition: .3s;
-  transition-timing-function:ease-out;
+  transition: .2s;
+  transition-delay: .1s;
+  transition-timing-function:ease-in-out;
 }
 div.search-window:hover input[type=text] {
-  display: block;
-  top: 45px;
-  opacity: 0;
-  right: 34%;
   width: 32%;
-  animation: search-visible 1s forwards;
-}
-@keyframes search-visible {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  right: 34%;
 }
 div.search-window:hover .fa-search {
   right: 67%;
@@ -172,7 +168,7 @@ div.parent-box {
   visibility: hidden;
   opacity: 0;
   transition-timing-function:ease-out;
-  transition: .1s;
+  transition: .2s;
 }
 div.search-window:hover div.parent-box {
   width: 60%;
@@ -180,9 +176,17 @@ div.search-window:hover div.parent-box {
   margin: 110px 20% 0 20%;
   padding: .5% 0;
   align-content: center;
-  opacity: .98;
+  /*opacity: .98;*/
   visibility: visible;
   background-color: #272727;
+  animation: change-parent-opacity .1s forwards;
+  animation-delay: .3s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes change-parent-opacity {
+  from {opacity: 0;}
+  to {opacity: .98;}
 }
 
 /* This contains all child boxes that show up when hovering over Search */
@@ -196,7 +200,7 @@ div.child-box {
   display: inline-block;
   position: relative;
   transition-timing-function:ease-out;
-  transition: width .1s, height .1s, opacity 1.7s;
+  transition: width .2s, height .2s, opacity 1s;
 }
 div.search-window:hover div.child-box {
   opacity: 1;
@@ -217,7 +221,7 @@ div.child-box-logo {
   opacity: 0;
   display: none;
   transition-timing-function:ease-out;
-  transition: width .1s, height .1s, opacity 1s;
+  transition: width .2s, height .2s, opacity 2s;
 }
 div.search-window:hover div.child-box-logo {
   opacity: 1;
