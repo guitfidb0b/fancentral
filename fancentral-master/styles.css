@@ -1,3 +1,178 @@
+/************************/
+div.bottom-header-container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #272727;
+  height: 170px;
+  width: 100%;
+  max-width: 1835px;
+  border: 1px solid #272727
+}
+div.logo-home {
+  background-color: #272727;
+  width: 19%;
+  height: 140px;
+  position: relative;
+  left: 1%;
+  top: 15px;
+  text-align: center;
+}
+div.deal-link {
+  height: 140px;
+  background-color: #006666;
+  box-shadow: 1px 1px 1px 1px #004d4d;
+  background-image: linear-gradient(to bottom right, #006666, #008080);
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: white;
+  font-size: 30px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  opacity: .8;
+  top: -125px;
+  left: 20%;
+  width: 60%;
+}
+
+@keyframes test {
+  0% {opacity: 0}
+  25% {opacity: 1}
+  50% {transform: translateX(-200px);}
+  100% {transform: translateX(0);}
+}
+/* Group 1 */
+div.deal-message-1 {
+  position: absolute;
+  left: 5px;
+  top: 35px;
+  font-size: 55px;
+  font-weight:bold;
+  padding: 0;
+  opacity: 1;
+  animation: test 5s inifinite;
+}
+div.deal-message-2 {
+  position: absolute;
+  right: 5px;
+  top: 35px;
+  font-size: 55px;
+  font-weight:bold;
+  padding: 0;
+  /************/
+  visibility: hidden;
+}
+/* Group 1 */
+
+/* Group 2 */
+div.deal-message-3 {
+  position: absolute;
+  top: 30px;
+  left: 25px;
+  font-size: 70px;
+  font-weight:bold;
+  /************/
+  visibility: hidden;
+}
+div.deal-message-4 {
+  position: absolute;
+  top: 30px;
+  left: 300px;
+  font-size: 70px;
+  font-weight:bold;
+  /************/
+  visibility: hidden;
+}
+div.deal-message-5 {
+  position: absolute;
+  top: 30px;
+  left: 540px;
+  font-size: 70px;
+  font-weight:bold;
+  /************/
+  visibility: hidden;
+}
+div.minshew-container-1 {
+  position: absolute;
+  right: 25px;
+  /************/
+  visibility: hidden;
+}
+img.minshew-cartoon-1 {
+  width: 130px;
+  height: auto;
+  /************/
+  visibility: hidden;
+}
+/* Group 2 */
+
+/* Group 3 */
+div.deal-message-6 {
+  position: absolute;
+  top: 30px;
+  left: 25px;
+  font-size: 70px;
+  font-weight:bold;
+  /************/
+  visibility: hidden;
+}
+/* Group 3 */
+
+/* Group 4 */
+div.deal-message-7 {
+  position: absolute;
+  top: 30px;
+  left: 200px;
+  font-size: 70px;
+  /************/
+  visibility: hidden;
+}
+div.minshew-container-2 {
+  position: absolute;
+  /************/
+  visibility: hidden;
+}
+img.minshew-cartoon-2 {
+  width: 190px;
+  height: auto;
+  /************/
+  visibility: hidden;
+}
+/* Group 4 */
+
+/* Group 5 */
+div.deal-message-8 {
+  position: absolute;
+  border: 1px solid tomato;
+  visibility: hidden;
+}
+div.deal-message-9 {
+  position: absolute;
+  border: 1px solid tomato;
+  visibility: hidden;
+}
+/* Group 5 */
+
+
+
+
+div.search-window {
+  background-color: #008080;
+  width: 19%;
+  height: 140px;
+  top: -265px;
+  position: relative;
+  text-align: center;
+  left: 80%;
+  color: white;
+  font-size: 30px;
+  box-shadow: 1px 1px 1px 1px #004d4d;
+  transition: .2s;
+  transition-timing-function:ease-out;
+  overflow: hidden;
+}
+
+/************************/
 /* Top header styles */
 section.top-header {
   background-color: #4d4d4d;
@@ -63,42 +238,7 @@ a.top-links {
 }
 
 /* Styles for Sticky Header */
-div.bottom-header-container {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: #272727;
-  height: 170px;
-  width: 100%;
-  max-width: 1835px;
-  border: 1px solid #272727
-}
-div.logo-home {
-  background-color: #272727;
-  width: 19%;
-  height: 140px;
-  position: absolute;
-  left: 1%;
-  top: 15px;
-  text-align: center;
-}
-div.deal-link {
-  height: 85px;
-  background-color: #006666;
-  box-shadow: 1px 1px 1px 1px #004d4d;
-  background-image: linear-gradient(to bottom right, #006666, #008080);
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  color: white;
-  text-align: left;
-  text-indent: 100px;
-  font-size: 30px;
-  padding-top: 55px;
-  position: absolute;
-  opacity: .8;
-  top: 15px;
-  left: 20%;
-  width: 60%;
-}
+
 .logo {
   max-width: 210px;
   height: auto;
@@ -121,21 +261,6 @@ div.deal-link {
   width: 80%;
   height: 50%;
     max-width: 100%
-}
-div.search-window {
-  background-color: #008080;
-  width: 19%;
-  height: 140px;
-  top: 15px;
-  position: relative;
-  text-align: center;
-  left: 80%;
-  color: white;
-  font-size: 30px;
-  box-shadow: 1px 1px 1px 1px #004d4d;
-  transition: .2s;
-  transition-timing-function:ease-out;
-  overflow: hidden;
 }
 .fa-search {
   font-size: 70px;
