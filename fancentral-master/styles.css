@@ -35,12 +35,6 @@ div.deal-link {
   width: 60%;
 }
 
-@keyframes test {
-  0% {opacity: 0}
-  25% {opacity: 1}
-  50% {transform: translateX(-200px);}
-  100% {transform: translateX(0);}
-}
 /* Group 1 */
 div.deal-message-1 {
   position: absolute;
@@ -49,9 +43,22 @@ div.deal-message-1 {
   font-size: 55px;
   font-weight:bold;
   padding: 0;
-  opacity: 1;
-  animation: test 5s inifinite;
+  opacity: 0;
+  /* Animation stuff */
+  animation-name: deal-message-1-animated;
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  /*animation: ;*/
 }
+@keyframes deal-message-1-animated {
+  0% {opacity: 0;}
+  10% {opacity: 1; transform: translateX(0px);}
+  12% {opacity: 1; transform: translateX(0px);}
+  13% {opacity: 1; transform: translateX(-800px);}
+  100% {opacity: 1; transform: translateX(-800px);}
+}
+
 div.deal-message-2 {
   position: absolute;
   right: 5px;
@@ -59,8 +66,20 @@ div.deal-message-2 {
   font-size: 55px;
   font-weight:bold;
   padding: 0;
-  /************/
-  visibility: hidden;
+  opacity: 0;
+  /* Animation stuff */
+  animation-name: deal-message-2-animated;
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  /*animation: ;*/
+}
+@keyframes deal-message-2-animated {
+  0% {opacity: 0;}
+  10% {opacity: 1; transform: translateX(0px);}
+  12% {opacity: 1; transform: translateX(0px);}
+  13% {opacity: 1; transform: translateX(800px);}
+  100% {opacity: 1; transform: translateX(800px);}
 }
 /* Group 1 */
 
@@ -71,39 +90,89 @@ div.deal-message-3 {
   left: 25px;
   font-size: 70px;
   font-weight:bold;
+  opacity: 0;
   /************/
-  visibility: hidden;
+  animation-name: deal-message-3-animated;
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
 }
+@keyframes deal-message-3-animated {
+  0% {opacity: 1; transform: translateX(1500px);}
+  13% {opacity: 1; transform: translateX(1500px);}
+  14% {opacity: 1; transform: translateX(0px);}
+  23% {opacity: 1; transform: translateX(0px);}
+  24% {opacity: 1; transform: translateX(-1500px);}
+  100% {opacity: 1; transform: translateX(-1500px);}
+}
+
 div.deal-message-4 {
   position: absolute;
   top: 30px;
   left: 300px;
   font-size: 70px;
   font-weight:bold;
+  opacity: 0;
   /************/
-  visibility: hidden;
+  animation-name: deal-message-4-animated;
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
 }
+@keyframes deal-message-4-animated {
+  0% {opacity: 1; transform: translateX(1500px);}
+  15% {opacity: 1; transform: translateX(1500px);}
+  16% {opacity: 1; transform: translateX(0px);}
+  25% {opacity: 1; transform: translateX(0px);}
+  26% {opacity: 1; transform: translateX(-1500px);}
+  100% {opacity: 1; transform: translateX(-1500px);}
+}
+
 div.deal-message-5 {
   position: absolute;
   top: 30px;
   left: 540px;
   font-size: 70px;
   font-weight:bold;
+  opacity: 0;
   /************/
-  visibility: hidden;
+  animation-name: deal-message-5-animated;
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
 }
+@keyframes deal-message-5-animated {
+  0% {opacity: 1; transform: translateX(1500px);}
+  17% {opacity: 1; transform: translateX(1500px);}
+  18% {opacity: 1; transform: translateX(0px);}
+  27% {opacity: 1; transform: translateX(0px);}
+  28% {opacity: 1; transform: translateX(-1500px);}
+  100% {opacity: 1; transform: translateX(-1500px);}
+}
+
 div.minshew-container-1 {
   position: absolute;
   right: 25px;
+  opacity: 0;
   /************/
-  visibility: hidden;
+  animation-name: deal-minshew-container-1-animated;
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
 }
 img.minshew-cartoon-1 {
   width: 130px;
   height: auto;
-  /************/
-  visibility: hidden;
 }
+@keyframes deal-minshew-container-1-animated {
+  0% {opacity: 1; transform: translateX(1500px);}
+  19% {opacity: 1; transform: translateX(1500px);}
+  20% {opacity: 1; transform: translateX(0px);}
+  29% {opacity: 1; transform: translateX(0px);}
+  30% {opacity: 1; transform: translateX(1500px);}
+  100% {opacity: 1; transform: translateX(1500px);}
+}
+
 /* Group 2 */
 
 /* Group 3 */
@@ -113,44 +182,109 @@ div.deal-message-6 {
   left: 25px;
   font-size: 70px;
   font-weight:bold;
+  opacity: 0;
   /************/
-  visibility: hidden;
+  animation-name: deal-message-6-animated;
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+@keyframes deal-message-6-animated {
+  0% {opacity: 0;}
+  30% {opacity: 0; transform: translateX(0px);}
+  40% {opacity: 1; transform: translateX(0px);}
+  41% {opacity: 1; transform: translateX(-1500px);}
+  100% {opacity: 1; transform: translateX(-1500px);}
 }
 /* Group 3 */
 
 /* Group 4 */
 div.deal-message-7 {
   position: absolute;
-  top: 30px;
+  top: 35px;
   left: 200px;
-  font-size: 70px;
+  font-size: 60px;
+  font-weight: bold;
+  opacity: 0;
   /************/
-  visibility: hidden;
+  animation-name: deal-message-7-animated;
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
 }
+@keyframes deal-message-7-animated {
+  0% {opacity: 1; transform: translateX(1500px);}
+  42% {opacity: 1; transform: translateX(1500px);}
+  43% {opacity: 1; transform: translateX(0px);}
+  52% {opacity: 1; transform: translateX(0px);}
+  53% {opacity: 1; transform: translateX(1500px);}
+  100% {opacity: 1; transform: translateX(1500px);}
+}
+
 div.minshew-container-2 {
   position: absolute;
+  opacity: 0;
   /************/
-  visibility: hidden;
+  animation-name: deal-minshew-container-2-animated;
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
 }
 img.minshew-cartoon-2 {
   width: 190px;
   height: auto;
-  /************/
-  visibility: hidden;
+}
+@keyframes deal-minshew-container-2-animated {
+  0% {opacity: 1; transform: translateX(-1500px);}
+  44% {opacity: 1; transform: translateX(-1500px);}
+  45% {opacity: 1; transform: translateX(0px);}
+  54% {opacity: 1; transform: translateX(0px);}
+  55% {opacity: 1; transform: translateX(-1500px);}
+  100% {opacity: 1; transform: translateX(-1500px);}
 }
 /* Group 4 */
 
 /* Group 5 */
 div.deal-message-8 {
   position: absolute;
-  border: 1px solid tomato;
-  visibility: hidden;
+  top: 30px;
+  left: 160px;
+  font-size: 70px;
+  font-weight: bold;
+  opacity: 0;
+  /************/
+  animation-name: deal-message-8-animated;
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+@keyframes deal-message-8-animated {
+  0% {opacity: 0; transform: translate(0px);}
+  55% {opacity: 0; transform: translate(0px);}
+  65% {opacity: 1; transform: translate(0px);}
+  67% {opacity: 1; transform: translate(-1500px);}
+  100% {opacity: 1; transform: translate(-1500px);}
 }
 div.deal-message-9 {
   position: absolute;
-  border: 1px solid tomato;
-  visibility: hidden;
+  top: 30px;
+  left: 220px;
+  font-size: 70px;
+  font-weight: bold;
+  opacity: 0;
+  /************/
+  animation-name: deal-message-9-animated;
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
 }
+@keyframes deal-message-9-animated {
+  0% {opacity: 0; transform: translate(0px);}
+  68% {opacity: 0; transform: translate(0px);}
+  75% {opacity: 1; transform: translate(0px);}
+  100% {opacity: 1; transform: translate(0px);}
+}
+
 /* Group 5 */
 
 
