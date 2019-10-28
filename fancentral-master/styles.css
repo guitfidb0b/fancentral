@@ -1,0 +1,496 @@
+/* Top header styles */
+section.top-header {
+  background-color: #4d4d4d;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #4d4d4d;
+}
+.header-coupon-container {
+  float: left;
+  width: 350px;
+  height: 45px;
+  padding: 0;
+}
+.savings-header-position {
+  width: 100%;
+}
+#button-div {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-transform: uppercase;
+  background-color: #008080;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 16px;
+  margin: 0;
+  box-shadow: 1px 1px 1px 1px #004d4d;
+}
+#button-div:hover {
+  background-color: #00b3b3;
+}
+
+a {text-decoration: none;}
+
+ul.top {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-align: right;
+  height: inherit;
+  margin: 0;
+}
+li {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  display: inline-block;
+  color: white;
+}
+li .top-links {
+  font-size: 16px;
+  padding: 10px 15px;
+}
+a.top-links {
+  text-decoration: none;
+  color: white;
+}
+.top-links:hover {
+  text-decoration: underline;
+}
+.cart-position {
+  height:30px;
+  width:70px;
+}
+.fa-shopping-cart {
+  font-size: 30px;
+  padding: 1px;
+}
+
+/* Styles for Sticky Header */
+div.bottom-header-container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #272727;
+  height: 170px;
+  width: 100%;
+  max-width: 1835px;
+  border: 1px solid #272727
+}
+div.logo-home {
+  background-color: #272727;
+  width: 19%;
+  height: 140px;
+  position: absolute;
+  left: 1%;
+  top: 15px;
+  text-align: center;
+}
+div.deal-link {
+  height: 85px;
+  background-color: #006666;
+  box-shadow: 1px 1px 1px 1px #004d4d;
+  background-image: linear-gradient(to bottom right, #006666, #008080);
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: white;
+  text-align: left;
+  text-indent: 100px;
+  font-size: 30px;
+  padding-top: 55px;
+  position: absolute;
+  opacity: .8;
+  top: 15px;
+  left: 20%;
+  width: 60%;
+}
+.logo {
+  max-width: 210px;
+  height: auto;
+  padding: 20px 0;
+}
+
+.salute{
+  width: 100%;
+  height: 80%;
+    max-width: 100%
+}
+
+.NFL100{
+  width: 90%;
+  height: 80%;
+  max-width: 100%
+}
+
+.wear{
+  width: 80%;
+  height: 50%;
+    max-width: 100%
+}
+div.search-window {
+  background-color: #008080;
+  width: 19%;
+  height: 140px;
+  top: 15px;
+  position: relative;
+  text-align: center;
+  left: 80%;
+  color: white;
+  font-size: 30px;
+  box-shadow: 1px 1px 1px 1px #004d4d;
+  transition: .2s;
+  transition-timing-function:ease-out;
+  overflow: hidden;
+}
+.fa-search {
+  font-size: 70px;
+  color: white;
+  position: absolute;
+  right: 240px;
+  top: 35px;
+  transition: .2s;
+  transition-delay: .1s;
+  transition-timing-function:ease-in-out;
+}
+input[type=text] {
+  position: absolute;
+  right: 0%;
+  height: 40px;
+  width: 170px;
+  top: 45px;
+  right: 50px;
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-radius: 7px;
+  background-color: white;
+  transition: .2s;
+  transition-delay: .1s;
+  transition-timing-function:ease-in-out;
+}
+div.search-window:hover input[type=text] {
+  width: 32%;
+  right: 34%;
+}
+div.search-window:hover .fa-search {
+  right: 67%;
+}
+
+/* Start of Transitions that are based on hovering over the Search div container */
+div.search-window:hover {
+  height: 740px;
+  width: 100%;
+  left: 0;
+  background-color: #272727;
+  opacity: .98;
+}
+div.parent-box {
+  width: 0;
+  height: 0;
+  float: right;
+  background-color: #008080;
+  visibility: hidden;
+  opacity: 0;
+  transition-timing-function:ease-out;
+  transition: .2s;
+}
+div.search-window:hover div.parent-box {
+  width: 60%;
+  height: 520px;
+  margin: 110px 20% 0 20%;
+  padding: .5% 0;
+  align-content: center;
+  /*opacity: .98;*/
+  visibility: visible;
+  background-color: #272727;
+  animation: change-parent-opacity .1s forwards;
+  animation-delay: .3s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes change-parent-opacity {
+  from {opacity: 0;}
+  to {opacity: .98;}
+}
+
+/* This contains all child boxes that show up when hovering over Search */
+div.child-box {
+  width: 0;
+  height: 0;
+  background-color: #4d4d4d;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  display: inline-block;
+  position: relative;
+  transition-timing-function:ease-out;
+  transition: width .2s, height .2s, opacity 1s;
+}
+div.search-window:hover div.child-box {
+  opacity: 1;
+  width: 25%;
+  height: 120px;
+  background-color: #008080;
+  margin: 1%;
+  visibility: visible;
+  overflow: hidden;
+  text-align: left;
+}
+
+div.child-box-logo {
+  width: 0;
+  height: 0;
+  background-color: #4d4d4d;
+  margin: 0;
+  opacity: 0;
+  display: none;
+  transition-timing-function:ease-out;
+  transition: width .2s, height .2s, opacity 2s;
+}
+div.search-window:hover div.child-box-logo {
+  opacity: 1;
+  width: 25%;
+  height: 100px;
+  background-color: #272727;
+  margin: 1%;
+  display: inline-block;
+}
+div.child-box:hover {
+  animation: widen .2s forwards;
+  animation-timing-function: ease-in-out;
+}
+div.child-box:hover span.icon-text{
+  animation: shift-right .5s forwards;
+  animation-delay: 0;
+  animation-timing-function: ease-in;
+}
+div.child-box:hover img.image-visibility {
+  animation: change-opacity .2s forwards;
+  animation-delay: .1s;
+  animation-timing-function: ease-in;
+}
+div.child-box:hover span.shop-text {
+  animation: shift-left .2s forwards;
+  animation-delay: .1s;
+  animation-timing-function: ease-in;
+}
+img.image-visibility {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  /*border: 1px solid tomato;*/
+}
+div.search-window:hover img.image-visibility {
+  display: flex;
+  opacity: .2;
+}
+span.icon-text {
+  font-size: 20px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  left: 15%;
+  display: none;
+  top: 80px;
+}
+div.search-window:hover span.icon-text {
+  display:flex;
+  /*border: 2px solid tomato;*/
+}
+span.shop-text {
+  font-size: 20px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: #00cccc;
+  background-color: white;
+  text-decoration: none;
+  position: absolute;
+  left:0;
+  transform: translateX(500px);
+  padding:2px;
+  width: 100%;
+  display: none;
+  top: 50px;
+}
+div.search-window:hover span.shop-text {
+  display: flex;
+}
+@keyframes change-opacity {
+  from {opacity: .2; top: 10px; width: 100px; height: auto;}
+  to {opacity: 1; top: 0; width: 120px; height: auto;}
+}
+@keyframes widen {
+  from {width: 25%; background-color: #008080;}
+  to {width: 30%; background-color: #00cccc;}
+}
+@keyframes shift-right {
+  0% {left: 15%;}
+  15% {transform: translateX(100px);}
+  100% {transform: translateX(100px);}
+}
+@keyframes shift-left {
+  from {transform: translateX(500px);}
+  to {transform: translateX(149px);}
+}
+img.logo-thumbnail {
+  width: 100%;
+  margin: 0;
+  height: auto;
+  opacity: .5;
+}
+
+/* Widens the child-box (this is in the navigation window */
+
+main.main-container {
+  width: 100%;
+}
+h2 {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+/* Styles for the Main content of the Home Page */
+.salute-link {
+  background-color: #cccccc;
+  height: 300px;
+  border: 1px solid #cccccc;
+  width: 100%;
+}
+.wear-link {
+  background-color: #fbfbfb;
+  height: 300px;
+  width: 50%;
+  float: right;
+  border: 1px solid #cccccc;
+}
+.nfl100-link {
+  background-color: #fbfbfb;
+  height: 300px;
+  width: 50%;
+  border: 1px solid #cccccc;
+}
+
+.minshew-link {
+  background-color: #cccccc;
+  height: 270px;
+  border: 1px solid #cccccc;
+  width: 100%;
+}
+.retired-link {
+  background-color: #fbfbfb;
+  height: 230px;
+  width: 50%;
+  float: right;
+  border: 1px solid #cccccc;
+}
+.season25-link {
+  background-color: #fbfbfb;
+  height: 230px;
+  width: 50%;
+  border: 1px solid #cccccc;
+}
+
+.brand-link {
+  background-color: #fbfbfb;
+  height: 200px;
+  border: 1px solid #cccccc;
+  width: 100%;
+  padding-bottom: 100px;
+  padding-top: 40px;
+}
+.sideline-link {
+  background-color: #fbfbfb;
+  height: 420px;
+  border: 1px solid #cccccc;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-align: center;
+  text-size: 25px;
+}
+.sideline-background {
+  background-image: url("./backgrounds/sideline background.jpg");
+
+}
+.players-link {
+  background-color: #fbfbfb;
+  height: 800px;
+  border: 1px solid #cccccc;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.customgear-link {
+  background-color: #fbfbfb;
+  height: 420px;
+  border: 1px solid #cccccc;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-align: center;
+  text-size: 25px;
+}
+
+
+/* Beginning footer section styles */
+.footer-coupon-container {
+  padding: 0;
+  margin:0;
+  float: left;
+  width: 100%;
+}
+.footer-container {
+  width: 90%;
+  border: 1px solid #cccccc;
+  padding: 25px 5%;
+  margin: 0;
+  background-color: #f0f8ff;
+}
+section.footer-inline {
+  display: inline-block;
+  width: 20%;
+  padding: 0;
+  margin:0;
+}
+section.footer-coupon {
+  float: right;
+  margin: 25px 0 0;
+  width 30px;
+  height 30px;
+}
+ul.footer-block {
+  margin: 0;
+  padding: 0;
+}
+a.footer-link-hover {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  margin:0;
+  padding:0;
+}
+.footer-link-hover:hover {
+  text-decoration: underline;
+}
+li.footer-links {
+  display: block;
+  padding: 10px 0;
+  text-indent: 10px;
+  margin:0;
+}
+h3 {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 15px;
+  color: black;
+  padding: 15px 0 10px 0;
+  margin:0;
+}
+.footer-2-container {
+  width: 100%;
+  padding: 25px 0px 25px 0px;
+  background-color: #cccccc;
+  border: 1px solid #cccccc;
+}
+p.center-aligned {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: black;
+}
