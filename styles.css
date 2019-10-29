@@ -1,3 +1,61 @@
+img.search-icon-size {
+  width: 70px;
+  height: auto;
+  position: absolute;
+  right: 240px;
+  top: 35px;
+  transition: .2s;
+  transition-delay: .1s;
+  transition-timing-function:ease-in-out;
+}
+div.search-window:hover img.search-icon-size {
+  right: 67%;
+}
+.top {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  position: relative;
+  width: 80%;
+  height: 50px;
+  top: -45px;
+  left: 20%;
+}
+
+.top-links {
+  float: right;
+  font-size: 16px;
+  padding: 17px 40px 17px 0;
+}
+.cart-position {
+  height: 40px;
+  width: 100px;
+  padding: 5px;
+  float: right;
+  text-align: center;
+  background-color: #008080;
+  margin: 0;
+  /*box-shadow: 1px 1px 1px 1px #004d4d;*/
+}
+a.top-links {
+  text-decoration: none;
+  color: white;
+}
+.top-links:hover {
+  text-decoration: underline;
+}
+
+img.cart-icon-size {
+  width: 40px;
+  height: auto;
+}
+.cart-position:hover {
+  background-color: #00b3b3;
+}
+
+li {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  display: inline-block;
+  color: white;
+}
 /************************/
 div.bottom-header-container {
   position: -webkit-sticky;
@@ -6,8 +64,6 @@ div.bottom-header-container {
   background-color: #272727;
   height: 170px;
   width: 100%;
-  /****** Edit here *****/
-  /*max-width: 1835px;*/
   border: 1px solid #272727
 }
 div.logo-home {
@@ -280,9 +336,9 @@ div.deal-message-9 {
   animation-iteration-count: 1;
 }
 @keyframes deal-message-9-animated {
-  0% {opacity: 0; transform: translate(0px);}
-  68% {opacity: 0; transform: translate(0px);}
-  75% {opacity: 1; transform: translate(0px);}
+  0% {opacity: 1; transform: translate(1500px);}
+  67% {opacity: 1; transform: translate(1500px);}
+  68% {opacity: 1; transform: translate(0px);}
   100% {opacity: 1; transform: translate(0px);}
 }
 
@@ -316,8 +372,8 @@ section.top-header {
   border: 1px solid #4d4d4d;
 }
 .header-coupon-container {
-  float: left;
-  width: 350px;
+  position: relative;
+  width: 20%;
   height: 45px;
   padding: 0;
 }
@@ -330,7 +386,7 @@ section.top-header {
   background-color: #008080;
   color: white;
   text-align: center;
-  padding: 10px 15px;
+  padding: 10px 0px;
   font-size: 16px;
   margin: 0;
   box-shadow: 1px 1px 1px 1px #004d4d;
@@ -340,38 +396,6 @@ section.top-header {
 }
 
 a {text-decoration: none;}
-
-ul.top {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  text-align: right;
-  height: inherit;
-  margin: 0;
-}
-li {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  display: inline-block;
-  color: white;
-}
-li .top-links {
-  font-size: 16px;
-  padding: 10px 15px;
-}
-a.top-links {
-  text-decoration: none;
-  color: white;
-}
-.top-links:hover {
-  text-decoration: underline;
-}
-.cart-position {
-  height:30px;
-  width:70px;
-}
-.fa-shopping-cart {
-  font-size: 30px;
-  padding: 1px;
-}
-
 /* Styles for Sticky Header */
 
 .logo {
@@ -398,9 +422,6 @@ input[type=text] {
 div.search-window:hover input[type=text] {
   width: 32%;
   right: 34%;
-}
-div.search-window:hover .fa-search {
-  right: 67%;
 }
 
 /* Start of Transitions that are based on hovering over the Search div container */
@@ -674,17 +695,6 @@ h2 {
   width: 400px;
   height: 400px;
   max-width: 100%;
-}
-
-.fa-search {
-  font-size: 70px;
-  color: white;
-  position: absolute;
-  right: 240px;
-  top: 35px;
-  transition: .2s;
-  transition-delay: .1s;
-  transition-timing-function:ease-in-out;
 }
 
 .sideline-background {
