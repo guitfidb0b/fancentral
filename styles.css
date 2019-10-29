@@ -6,7 +6,8 @@ div.bottom-header-container {
   background-color: #272727;
   height: 170px;
   width: 100%;
-  max-width: 1835px;
+  /****** Edit here *****/
+  /*max-width: 1835px;*/
   border: 1px solid #272727
 }
 div.logo-home {
