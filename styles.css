@@ -393,7 +393,10 @@ section.top-header {
   background-color: #00b3b3;
 }
 
-a {text-decoration: none;}
+a {
+  text-decoration: none;
+}
+
 /* Styles for Sticky Header */
 
 .logo {
