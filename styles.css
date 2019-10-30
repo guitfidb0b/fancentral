@@ -579,7 +579,7 @@ h2 {
 
 /* Styles for the Main content of the Home Page */
 .salute-link {
-  background-color: #fbfbfb;
+  background-color: #cccccc;
   height: 350px;
   border: 1px solid #cccccc;
   width: 100%;
@@ -602,10 +602,11 @@ h2 {
 }
 
 .minshew-link {
-  background-color: #cccccc;
   height: 270px;
   border: 1px solid #cccccc;
   width: 100%;
+  padding-bottom: 200px;
+  background-color: #cccccc;
 }
 .retired-link {
   background-color: #fbfbfb;
@@ -624,7 +625,7 @@ h2 {
 }
 
 .brand-link {
-  background-color: #fbfbfb;
+  background-color: #cccccc;
   height: 200px;
   border: 1px solid #cccccc;
   width: 100%;
@@ -644,6 +645,9 @@ h2 {
 }
 
 /*Sections pictures for homepage*/
+h2:hover{
+	font-size: 23px;
+}
 
 .salute{
   width: 1795px;
@@ -663,6 +667,23 @@ h2 {
   max-width: 100%;
 }
 
+.Minshew{
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+}
+.Minshew Face{
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+}
+.Minshew Figure{
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+}
+
+  
 .25th Season{
   width: 400px;
   height: 400px;
@@ -674,6 +695,9 @@ h2 {
   height: 400px;
   max-width: 100%;
 }
+/*hover effect for headindings (h2)*/
+
+/*---------------------------------*/
 
 .fa-search {
   font-size: 70px;
@@ -691,7 +715,7 @@ h2 {
 
 }
 .players-link {
-  background-color: #fbfbfb;
+  background-color: #cccccc;
   height: 800px;
   border: 1px solid #cccccc;
   width: 100%;
