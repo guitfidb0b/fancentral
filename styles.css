@@ -1,6 +1,9 @@
 * {
   outline: none;
 }
+a {
+  text-decoration: none;
+}
 
 img.search-icon-size {
   width: 70px;
@@ -12,9 +15,11 @@ img.search-icon-size {
   transition-delay: .1s;
   transition-timing-function:ease-in-out;
 }
+
 div.search-window:hover img.search-icon-size {
   right: 67%;
 }
+
 .top {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   position: relative;
@@ -29,6 +34,7 @@ div.search-window:hover img.search-icon-size {
   font-size: 16px;
   padding: 17px 40px 17px 0;
 }
+
 .cart-position {
   height: 40px;
   width: 100px;
@@ -39,10 +45,12 @@ div.search-window:hover img.search-icon-size {
   margin: 0;
   /*box-shadow: 1px 1px 1px 1px #004d4d;*/
 }
+
 a.top-links {
   text-decoration: none;
   color: white;
 }
+
 .top-links:hover {
   text-decoration: underline;
 }
@@ -51,6 +59,7 @@ img.cart-icon-size {
   width: 40px;
   height: auto;
 }
+
 .cart-position:hover {
   background-color: #00b3b3;
 }
@@ -61,7 +70,6 @@ li {
   color: white;
 }
 
-/************************/
 div.bottom-header-container {
   position: -webkit-sticky;
   position: sticky;
@@ -71,6 +79,7 @@ div.bottom-header-container {
   width: 100%;
   border: 1px solid #272727
 }
+
 div.logo-home {
   background-color: #272727;
   width: 19%;
@@ -80,6 +89,7 @@ div.logo-home {
   top: 15px;
   text-align: center;
 }
+
 div.deal-link {
   height: 140px;
   background-color: #006666;
@@ -96,6 +106,7 @@ div.deal-link {
   left: 20%;
   width: 60%;
 }
+
 div.clickable-div {
   height: 140px;
   width: 100%;
@@ -112,13 +123,12 @@ div.deal-message-1 {
   font-weight:bold;
   padding: 0;
   opacity: 0;
-  /* Animation stuff */
   animation-name: deal-message-1-animated;
   animation-duration: 20s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
-  /*animation: ;*/
 }
+
 @keyframes deal-message-1-animated {
   0% {opacity: 0;}
   2% {opacity: 0;}
@@ -136,13 +146,12 @@ div.deal-message-2 {
   font-weight:bold;
   padding: 0;
   opacity: 0;
-  /* Animation stuff */
   animation-name: deal-message-2-animated;
   animation-duration: 20s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
-  /*animation: ;*/
 }
+
 @keyframes deal-message-2-animated {
   0% {opacity: 0;}
   2% {opacity: 0;}
@@ -161,12 +170,12 @@ div.deal-message-3 {
   font-size: 70px;
   font-weight:bold;
   opacity: 0;
-  /************/
   animation-name: deal-message-3-animated;
   animation-duration: 20s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
 }
+
 @keyframes deal-message-3-animated {
   0% {opacity: 1; transform: translateX(1500px);}
   13% {opacity: 1; transform: translateX(1500px);}
@@ -183,12 +192,12 @@ div.deal-message-4 {
   font-size: 70px;
   font-weight:bold;
   opacity: 0;
-  /************/
   animation-name: deal-message-4-animated;
   animation-duration: 20s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
 }
+
 @keyframes deal-message-4-animated {
   0% {opacity: 1; transform: translateX(1500px);}
   15% {opacity: 1; transform: translateX(1500px);}
@@ -205,12 +214,12 @@ div.deal-message-5 {
   font-size: 70px;
   font-weight:bold;
   opacity: 0;
-  /************/
   animation-name: deal-message-5-animated;
   animation-duration: 20s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
 }
+
 @keyframes deal-message-5-animated {
   0% {opacity: 1; transform: translateX(1500px);}
   17% {opacity: 1; transform: translateX(1500px);}
@@ -224,16 +233,17 @@ div.minshew-container-1 {
   position: absolute;
   right: 25px;
   opacity: 0;
-  /************/
   animation-name: deal-minshew-container-1-animated;
   animation-duration: 20s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
 }
+
 img.minshew-cartoon-1 {
   width: 130px;
   height: auto;
 }
+
 @keyframes deal-minshew-container-1-animated {
   0% {opacity: 1; transform: translateX(1500px);}
   19% {opacity: 1; transform: translateX(1500px);}
@@ -242,7 +252,6 @@ img.minshew-cartoon-1 {
   30% {opacity: 1; transform: translateX(1500px);}
   100% {opacity: 1; transform: translateX(1500px);}
 }
-
 /* Group 2 */
 
 /* Group 3 */
@@ -253,12 +262,12 @@ div.deal-message-6 {
   font-size: 70px;
   font-weight:bold;
   opacity: 0;
-  /************/
   animation-name: deal-message-6-animated;
   animation-duration: 20s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
 }
+
 @keyframes deal-message-6-animated {
   0% {opacity: 0;}
   30% {opacity: 0; transform: translateX(0px);}
@@ -276,7 +285,6 @@ div.deal-message-7 {
   font-size: 60px;
   font-weight: bold;
   opacity: 0;
-  /************/
   animation-name: deal-message-7-animated;
   animation-duration: 20s;
   animation-fill-mode: forwards;
@@ -294,16 +302,17 @@ div.deal-message-7 {
 div.minshew-container-2 {
   position: absolute;
   opacity: 0;
-  /************/
   animation-name: deal-minshew-container-2-animated;
   animation-duration: 20s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
 }
+
 img.minshew-cartoon-2 {
   width: 190px;
   height: auto;
 }
+
 @keyframes deal-minshew-container-2-animated {
   0% {opacity: 1; transform: translateX(-1500px);}
   44% {opacity: 1; transform: translateX(-1500px);}
@@ -322,12 +331,12 @@ div.deal-message-8 {
   font-size: 70px;
   font-weight: bold;
   opacity: 0;
-  /************/
   animation-name: deal-message-8-animated;
   animation-duration: 20s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
 }
+
 @keyframes deal-message-8-animated {
   0% {opacity: 0; transform: translate(0px);}
   55% {opacity: 0; transform: translate(0px);}
@@ -335,6 +344,7 @@ div.deal-message-8 {
   67% {opacity: 1; transform: translate(-1500px);}
   100% {opacity: 1; transform: translate(-1500px);}
 }
+
 div.deal-message-9 {
   position: absolute;
   top: 30px;
@@ -342,18 +352,19 @@ div.deal-message-9 {
   font-size: 70px;
   font-weight: bold;
   opacity: 0;
-  /************/
   animation-name: deal-message-9-animated;
   animation-duration: 20s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
 }
+
 @keyframes deal-message-9-animated {
   0% {opacity: 1; transform: translate(1500px);}
   67% {opacity: 1; transform: translate(1500px);}
   68% {opacity: 1; transform: translate(0px);}
   100% {opacity: 1; transform: translate(0px);}
 }
+
 /* Group 5 */
 div.search-window {
   background-color: #008080;
@@ -371,7 +382,6 @@ div.search-window {
   overflow: hidden;
 }
 
-/************************/
 /* Top header styles */
 section.top-header {
   background-color: #4d4d4d;
@@ -379,15 +389,18 @@ section.top-header {
   height: 50px;
   border: 1px solid #4d4d4d;
 }
+
 .header-coupon-container {
   position: relative;
   width: 20%;
   height: 45px;
   padding: 0;
 }
+
 .savings-header-position {
   width: 100%;
 }
+
 #button-div {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   text-transform: uppercase;
@@ -399,16 +412,12 @@ section.top-header {
   margin: 0;
   box-shadow: 1px 1px 1px 1px #004d4d;
 }
+
 #button-div:hover {
   background-color: #00b3b3;
 }
 
-a {
-  text-decoration: none;
-}
-
 /* Styles for Sticky Header */
-
 .logo {
   max-width: 210px;
   height: auto;
@@ -430,11 +439,11 @@ input[type=text] {
   transition-delay: .1s;
   transition-timing-function:ease-in-out;
 }
+
 div.search-window:hover input[type=text] {
   width: 32%;
   right: 34%;
 }
-
 
 /* Start of Transitions that are based on hovering over the Search div container */
 div.search-window:hover {
@@ -444,6 +453,7 @@ div.search-window:hover {
   background-color: #272727;
   opacity: .98;
 }
+
 div.parent-box {
   width: 0;
   height: 0;
@@ -454,6 +464,7 @@ div.parent-box {
   transition-timing-function:ease-out;
   transition: .2s;
 }
+
 div.search-window:hover div.parent-box {
   width: 60%;
   height: 520px;
@@ -485,6 +496,7 @@ div.child-box {
   transition-timing-function:ease-out;
   transition: width .2s, height .2s, opacity 1s;
 }
+
 div.search-window:hover div.child-box {
   opacity: 1;
   width: 25%;
@@ -506,6 +518,7 @@ div.child-box-logo {
   transition-timing-function:ease-out;
   transition: width .2s, height .2s, opacity 2s;
 }
+
 div.search-window:hover div.child-box-logo {
   opacity: 1;
   width: 25%;
@@ -514,36 +527,42 @@ div.search-window:hover div.child-box-logo {
   margin: 1%;
   display: inline-block;
 }
+
 div.child-box:hover {
   animation: widen .2s forwards;
   animation-timing-function: ease-in-out;
 }
+
 div.child-box:hover span.icon-text{
   animation: shift-right .5s forwards;
   animation-delay: 0;
   animation-timing-function: ease-in;
 }
+
 div.child-box:hover img.image-visibility {
   animation: change-opacity .2s forwards;
   animation-delay: .1s;
   animation-timing-function: ease-in;
 }
+
 div.child-box:hover span.shop-text {
   animation: shift-left .2s forwards;
   animation-delay: .1s;
   animation-timing-function: ease-in;
 }
+
 img.image-visibility {
   display: none;
   position: absolute;
   top: 10px;
   left: 5px;
-  /*border: 1px solid tomato;*/
 }
+
 div.search-window:hover img.image-visibility {
   display: flex;
   opacity: .2;
 }
+
 span.icon-text {
   font-size: 20px;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -554,10 +573,11 @@ span.icon-text {
   display: none;
   top: 80px;
 }
+
 div.search-window:hover span.icon-text {
   display:flex;
-  /*border: 2px solid tomato;*/
 }
+
 span.shop-text {
   font-size: 20px;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -572,26 +592,32 @@ span.shop-text {
   display: none;
   top: 50px;
 }
+
 div.search-window:hover span.shop-text {
   display: flex;
 }
+
 @keyframes change-opacity {
   from {opacity: .2; top: 10px; width: 100px; height: auto;}
   to {opacity: 1; top: 0; width: 120px; height: auto;}
 }
+
 @keyframes widen {
   from {width: 25%; background-color: #008080;}
   to {width: 30%; background-color: #00cccc;}
 }
+
 @keyframes shift-right {
   0% {left: 15%;}
   15% {transform: translateX(100px);}
   100% {transform: translateX(100px);}
 }
+
 @keyframes shift-left {
   from {transform: translateX(500px);}
   to {transform: translateX(149px);}
 }
+
 img.logo-thumbnail {
   width: 100%;
   margin: 0;
@@ -599,18 +625,16 @@ img.logo-thumbnail {
   opacity: .5;
 }
 
-/* Widens the child-box (this is in the navigation window */
-
 main.main-container {
   width: 100%;
 }
+
 h2 {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size: 20px;
   color: black;
 }
 
-/* Styles for the Main content of the Home Page */
 .salute-link {
   background-color: #fbfbfb;
   height: 350px;
@@ -618,6 +642,7 @@ h2 {
   width: 100%;
   padding-bottom: 200px;
 }
+
 .wear-link {
   background-color: #fbfbfb;
   height: 300px;
@@ -626,6 +651,7 @@ h2 {
   border: 1px solid #cccccc;
   padding-bottom: 200px;
 }
+
 .nfl100-link {
   background-color: #fbfbfb;
   height: 300px;
@@ -640,6 +666,7 @@ h2 {
   border: 1px solid #cccccc;
   width: 100%;
 }
+
 .retired-link {
   background-color: #fbfbfb;
   height: 230px;
@@ -648,6 +675,7 @@ h2 {
   border: 1px solid #cccccc;
   padding-bottom: 250px;
 }
+
 .season25-link {
   background-color: #fbfbfb;
   height: 230px;
@@ -664,6 +692,7 @@ h2 {
   padding-bottom: 100px;
   padding-top: 40px;
 }
+
 .sideline-link {
   background-color: #fbfbfb;
   height: 420px;
@@ -675,8 +704,6 @@ h2 {
   text-align: center;
   text-size: 25px;
 }
-
-/*Sections pictures for homepage*/
 
 .salute{
   width: 1795px;
@@ -721,8 +748,8 @@ h2 {
 
 .sideline-background {
   background-image: url("./backgrounds/sideline background.jpg");
-
 }
+
 .players-link {
   background-color: #fbfbfb;
   height: 800px;
@@ -730,6 +757,7 @@ h2 {
   width: 100%;
   padding-bottom: 20px;
 }
+
 .customgear-link {
   background-color: #fbfbfb;
   height: 420px;
@@ -742,14 +770,13 @@ h2 {
   text-size: 25px;
 }
 
-
-/* Beginning footer section styles */
 .footer-coupon-container {
   padding: 0;
   margin:0;
   float: left;
   width: 100%;
 }
+
 .footer-container {
   width: 90%;
   border: 1px solid #cccccc;
@@ -757,22 +784,26 @@ h2 {
   margin: 0;
   background-color: #f0f8ff;
 }
+
 section.footer-inline {
   display: inline-block;
   width: 20%;
   padding: 0;
   margin:0;
 }
+
 section.footer-coupon {
   float: right;
   margin: 25px 0 0;
   width 30px;
   height 30px;
 }
+
 ul.footer-block {
   margin: 0;
   padding: 0;
 }
+
 a.footer-link-hover {
   color: black;
   font-size: 14px;
@@ -780,15 +811,18 @@ a.footer-link-hover {
   margin:0;
   padding:0;
 }
+
 .footer-link-hover:hover {
   text-decoration: underline;
 }
+
 li.footer-links {
   display: block;
   padding: 10px 0;
   text-indent: 10px;
   margin:0;
 }
+
 h3 {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size: 15px;
@@ -796,12 +830,14 @@ h3 {
   padding: 15px 0 10px 0;
   margin:0;
 }
+
 .footer-2-container {
   width: 100%;
   padding: 25px 0px 25px 0px;
   background-color: #cccccc;
   border: 1px solid #cccccc;
 }
+
 p.center-aligned {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size: 14px;
