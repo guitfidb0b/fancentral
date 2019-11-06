@@ -899,7 +899,6 @@ p{
  margin-top: 20px;
  margin-left: 30%;
  margin-bottom:20px;
- border-radius: 15px;
   
 }
 
@@ -949,6 +948,59 @@ hr {
   text-align: center;
 }
 /* ---------------------------------------------------------*/
+/*about us page*/
+.our-business{
+	
+  background-color: white;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 30%;
+  height: 70%;
+  position: static;
+   margin-bottom:1%;
+    margin-left:10%;
+	 border-color: #008080;
+}
+
+.our-promise{
+	
+  background-color: white;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 30%;
+  height: 70%;
+  position: static;
+   margin-bottom:1%;
+    margin-left:10%;
+	 border-color: #008080;
+
+}
+
+.our-contacts{
+	
+  background-color: white;
+   border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 30%;
+  height: 70%;
+  position: static;
+  margin-bottom:1%;
+  margin-left:10%;
+   border-color: #008080;
+}
+
+.about-us-image{
+	float:right;
+	margin-right:10%;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  border-color: #008080;
+  
+}
 
 
 
@@ -961,10 +1013,4 @@ hr {
 
 
 
-
-
-
-
-
-
-
+ 
